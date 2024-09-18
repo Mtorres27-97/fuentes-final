@@ -1,0 +1,95 @@
+footer {
+    background-color: #140402;
+
+    div {
+        a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+            @extend %iconos;
+
+            i {
+                font-size: 2em;
+                color: black;
+                opacity: 0, 9;
+            }
+        }
+    }
+
+    div .footerNav {
+        margin: 30px 0;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            }
+            li {
+                &:hover {
+                    opacity: 1;
+                }
+
+                a {
+                    
+                    color: rgb(255, 255, 255);
+                    margin: 20px;
+                    text-decoration: none;
+                    font-size: 1.3em;
+                    opacity: 0.7;
+                    transition: 0.5s;
+                    background-color:#140402;
+                        @extend %iconos;
+                        @extend %enlaces;
+                    i{   
+                        color: rgb(145, 42, 42);
+                        transition: 0.5s;
+                    }}
+                }
+            }
+        }
+
+    div .footerBottom {
+        background-color: #ffffff4f;
+        padding: 20px;
+        text-align: center;
+        height: 5px;}
+
+        p {
+            position: absolute;
+            padding-left: 37em;
+            display: flex;
+            color: rgb(0, 0, 0);
+        }
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+
+.socialIcons &:hover i {
+        color: white;
+        transition: 0.5s;
+    }
+.socialIcons &:hover {
+        background-color: #3c0707;
+        transition: 0.5s;
+    }
+    &:hover {
+        color: rgb(144, 43, 43);
+        transition: 0.5s;
+    }
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}

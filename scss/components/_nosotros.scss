@@ -1,0 +1,43 @@
+.nosotros-section {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    animation: fadeIn 1s ease-out
+}
+
+.nosotros-parrafo {
+    text-align: justify;
+    height: 350px;
+    font-size: 28px;
+    position: absolute;
+    right: 18em;
+    top: 6vw;
+    width: 60em;
+    font-family: sans-serif;
+    animation: fadeIn 1s ease-out
+
+}
+
+.nosotros-container {
+    @include flex(flex, center, justify);
+    flex-direction: column;
+    margin: 15px;
+    line-height: 28px;
+    position: relative;
+
+    .nosotrosimg {
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: black;
+        animation: fadeIn 1s ease-out;
+    }
+}
+
+    article {
+        h1 {
+            img {
+                width: 600px;
+            }
+        }
+    }

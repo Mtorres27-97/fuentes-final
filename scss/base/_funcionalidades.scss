@@ -1,0 +1,75 @@
+//*VARIABLES
+$color-background: rgba(92, 96, 100, 0.295);
+$color-Titles: rgb(255, 255, 255);
+$color-body: rgb(75, 73, 73);
+$body-font: "Sans serif", serif;
+
+%cardbuttons {
+    width: 120px;
+    text-decoration: none;
+    display: inline-block;
+    color: #f5fdfb;
+    border: 2px solid #78393d;
+    background-color: #78393d;
+    border-radius: 10px;
+
+    &:hover {
+        background: hsl(6, 73%, 61%);
+        color: #ffffff;
+    }
+}
+
+
+%enlaces {
+    text-decoration: none;
+    color: $color-body;
+
+    &:hover {
+        color: rgb(231, 101, 101);
+    }
+}
+
+%botones {
+    background-color: #075651;
+    border: 3px solid rgb(186, 206, 226);
+    border-radius: 8px;
+    transition: 0.8s;
+
+    &:hover {
+        background-color: #a4c7ed5d;
+        color: rgb(76, 76, 76);
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+            0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+%iconos {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: #111;
+        transition: 0.5s;
+    }
+}
+
+@mixin flex($flex, $content, $align){
+    display: $flex;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Opcional: añadir un pequeño movimiento vertical */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }}
