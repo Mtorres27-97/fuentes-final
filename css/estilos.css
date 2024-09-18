@@ -667,8 +667,9 @@ p {
     display: none; } }
 
 @media screen and (max-width: 458px) {
-  .herobutton {
-    visibility: hidden; } }
+  .hero p {
+    font-size: 10px;
+    line-height: 1.1; } }
 
 @media screen and (max-width: 404px) {
   .hero {
